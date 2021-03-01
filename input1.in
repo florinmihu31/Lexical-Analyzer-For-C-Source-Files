@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define N 5
+
+int linear_search(int arr[], int elems_no, int element) {
+	int i;
+
+	for (i = 0; i < elems_no; ++i) {
+		if (arr[i] == element) {
+			return i;
+		}
+	}
+
+	return -1;
+}
+
+int main(void) {
+	int arr[] = { 6, 7, 8, 9, 10 };
+	int element = 10;
+
+	printf("%d\n", linear_search(arr, N, element));
+
+	return 0;
+}

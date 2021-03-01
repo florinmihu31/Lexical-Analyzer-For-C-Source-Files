@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define NUM_ELEMS 10
+
+int global_var;
+
+int _test (int    a, unsigned long long b) {
+	int abc, def, ghi, jkl;
+	int mnop[NUM_ELEMS];
+	char ch_arr[NUM_ELEMS][NUM_ELEMS];
+	long long ll1[] = {1, 2, 3}, ll2;
+	// char ch;
+
+	abc = 1;
+	def = 2;
+
+	return abc + def;
+}
+
+int main() {
+	char ok1 = 'f';
+
+#if 0
+	int ok2;
+#endif
+
+	char ok3[] = "Unu, doi";
+
+	return 0;
+}
